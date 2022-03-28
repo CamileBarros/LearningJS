@@ -1,6 +1,6 @@
-var alunos = ["Maria", "Ana", "Alice", "Bia"];
-var nota1 = [8.3, 4.2, 6.2, 6.3];
-var nota2 = [7.8, 6.3, 5.1, 8.0];
+var students = ["Maria", "Ana", "Alice", "Bia"];
+var note1 = [8.3, 4.2, 6.2, 6.3];
+var note2 = [7.8, 6.3, 5.1, 8.2];
 
 function media(n1, n2) {
     return (n1 + n2) / 2
@@ -9,19 +9,19 @@ function media(n1, n2) {
 function result(media) {
 
     if (media > 6) {
-        return "Aprovada";
+        return "Approved";
     }else{
-        return "Reprovada";
+        return "Failed";
     }
 }
 
-for (var index in alunos) {
+for (var index in students) {
 
-    var n1 = nota1[index];
-    var n2 = nota2[index];
+    var n1 = note1[index];
+    var n2 = note2[index];
     var m = media(n1, n2);
 
-    console.log(alunos[index] + 
+    console.log(students[index] + 
        ": " +
        n1 +
        " | " +
